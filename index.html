@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">ARUN YERRAM</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">ARUN YERRAM</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Photo1.jpg" alt="John Doe profile picture" width="400px" height="400px" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">ARUN YERRAM</h1>
+      <p class="section__text__p2">FullStack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/My_Resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+
+      <!-- <div id="coding-profiles">
+        <p>My Coding Profiles</p>
+        <div class="coding-icons">
+          <img src="./assets/leetcode.png" alt="My LeetCode profile" class="icon" onclick="window.open('https://leetcode.com/u/arun_2005/', '_blank')" width="80px"/>
+          <img src="./assets/GFG.jpeg" alt="My GFG profile" class="icon" width="80px" onclick="window.open('https://www.geeksforgeeks.org/user/arunyerram/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user', '_blank')" />
+          <img src="./assets/CodeChef.jpeg" alt="My CodeChef profile" class="icon" onclick="window.open('https://www.codechef.com/users/yarun2k05', '_blank')" width="80px"/>
+          <img src="./assets/Codeforces.png" alt="My CodeForces profile" class="icon" width="80px" onclick="window.open('https://codeforces.com/profile/Arunyerram_12', '_blank')" />
+          <img src="./assets/IB.png" alt="My InterviewBit profile" class="icon" width="80px" onclick="window.open('https://www.interviewbit.com/profile/yerram-arun/', '_blank')" />
+        </div> -->
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/Photo1.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience and Learning</h3>
+            <p>0-2 years <br />Full Stack Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Pursuing B.Tech (Bachelors Degree) Majoring in Data Science From Keshav Memorial Institute of Technology <br /></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>I have a keen interest in <b>Full Stack Development , </b> <b>Problem Solving</b> and am eager to learn <b> Data Science </b> and explore various tech fields.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Full Stack Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git & GitHub</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">DSA and Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CPP</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+
+  <section class="coding-profiles">
+    <h2 class="section-title">My Coding Profiles</h2>
+    <div class="card-container">
+      <!-- LeetCode Card -->
+      <div class="card">
+        <img src="./assets/leetcode.jpg" alt="LeetCode" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">LeetCode</h3>
+          <p class="card-text">Explore my coding journey on LeetCode.</p>
+          <a href="https://leetcode.com/arun_2005" target="_blank" class="btn">View Profile</a>
+        </div>
+      </div>
+  
+      <!-- GeeksforGeeks Card -->
+      <div class="card">
+        <img src="./assets/geeksforgeeks.jpg" alt="GeeksforGeeks" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">GeeksforGeeks</h3>
+          <p class="card-text">Check out my problem-solving on GFG.</p>
+          <a href="https://www.geeksforgeeks.org/user/arunyerram/" target="_blank" class="btn">View Profile</a>
+        </div>
+      </div>
+  
+      <!-- Add More Cards -->
+      <div class="card">
+        <img src="./assets/codechef.jpg" alt="Codeforces" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">Codechef</h3>
+          <p class="card-text">View my competitive programming stats.</p>
+          <a href="https://www.codechef.com/users/yarun2k05" target="_blank" class="btn">View Profile</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/codeforces.jpg" alt="Codeforces" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">Codeforces</h3>
+          <p class="card-text">View my competitive programming stats.</p>
+          <a href="https://codeforces.com/profile/Arunyerram_12" target="_blank" class="btn">View Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+
+
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="experience-details-container">
+
+      <div class="about-containers">
+
+
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">SAHAYA</h2>
+          <!-- <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ARUN-YERRAM/LecturesCheck'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div> -->
+          <div class="btn-container">
+            <a href="https://github.com/ARUN-YERRAM/Project-3-1-CHatbot-Mental-Health-" class="btn btn-color-2 project-btn" target="_blank">GitHub</a>
+            <a href="" class="btn btn-color-2 project-btn" target="_blank">Live Demo</a>
+          </div>
+          
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Diwali Sales Analysis</h2>
+          <!-- <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ARUN-YERRAM/LecturesCheck'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div> -->
+          <div class="btn-container">
+            <a href="https://github.com/ARUN-YERRAM/Project-3-1-CHatbot-Mental-Health-" class="btn btn-color-2 project-btn" target="_blank">GitHub</a>
+            <a href="" class="btn btn-color-2 project-btn" target="_blank">Live Demo</a>
+          </div>
+          
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/P1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">NYAAYSAHAAYAK</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ARUN-YERRAM/NYAAYSAHAAYAK'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">LecturesCheck</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ARUN-YERRAM/LecturesCheck'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:arunyerram12022005@gmail.com">arunyerram12022005@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/arun-yerram/">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.github.com/ARUN-YERRAM/">GitHub</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+        <p><a href="tel:+91 630 199 0000">+91 9848427033</a></p>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Arun Yerram. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
